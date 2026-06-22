@@ -11,9 +11,9 @@ The project follows clean-code software engineering principles by decoupling cor
 
 ## Code Structure
 
->models.py          # PyTorch implementations of MLP (Attention) and the generic RNN/GRU/LSTM class.
->utils.py           # Text preprocessing, vocabulary builder, PyTorch Dataset, and train/test loops.
->main.ipynb         # Interactive execution notebook containing pipelines, visualization, and persistent metrics.
+>  *models.py          # PyTorch implementations of MLP (Attention) and the generic RNN/GRU/LSTM class.
+>  *utils.py           # Text preprocessing, vocabulary builder, PyTorch Dataset, and train/test loops.
+>  *main.ipynb         # Interactive execution notebook containing pipelines, visualization, and persistent metrics.
 
 ---
 
