@@ -1,10 +1,22 @@
 # Sentiment Analysis with RNN, GRU, and LSTM
 
 ## Overview
-This project presents a comparative study of **recurrent neural network architectures** for **binary sentiment classification** on the **IMDB movie reviews dataset**.  
-The models are implemented in **PyTorch** and enhanced with **max pooling** and **attention mechanisms**, while leveraging **pretrained Word2Vec embeddings** to capture semantic information.
+This repository implements a production-ready, comparative study of **recurrent network architectures** for **binary sentiment classification** using the **IMDB large movie reviews dataset**. 
 
-The goal of the project is to evaluate how different sequence modeling architectures and aggregation strategies affect classification performance.
+The models are developed using **PyTorch**, optimized with **Bidirectional** processing, and enhanced with advanced aggregation strategies such as **Max Pooling over time** and an **MLP-based Self-Attention mechanism**. Semantic text representation is achieved using **pretrained Google News Word2Vec embeddings (300d)**.
+
+The project follows clean-code software engineering principles by decoupling core architectural definitions from execution environments.
+
+---
+
+## Repository Structure
+
+The project has been refactored into a modular, professional architecture:
+
+```text
+├── models.py          # PyTorch implementations of MLP (Attention) and the generic RNN/GRU/LSTM class.
+├── utils.py           # Text preprocessing, vocabulary builder, PyTorch Dataset, and train/test loops.
+└── main.ipynb         # Interactive execution notebook containing pipelines, visualization, and persistent metrics.
 
 ---
 
