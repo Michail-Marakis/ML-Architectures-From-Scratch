@@ -83,6 +83,16 @@ Models are evaluated on the test set using:
 ## Results
 - In main.ipynb file there are the results of the final run before commit in this repo.
 - Analytic results from different combinations of hyperparameters can be found in: https://drive.google.com/drive/folders/1p0zjjSEbGFUO3WnQ5tjgVsMRTmLMrVUF?usp=drive_link
+- Folders in Google Drive present the results from the runs with the hyperparameters of their name.
+
+### Mapping of hyperparameters
+
+- hl = hidden layers
+- lr = learning rate
+- hs = hidden states
+- bs = batch size
+- %dev data
+- max words per critisism
 
 ## Language and Libraries Used
 
