@@ -36,7 +36,6 @@ This results in a total of **six models**:
 - RNN + Attention  
 - GRU + Attention  
 - LSTM + Attention
-- 
 ---
 
 ## Dataset
@@ -82,7 +81,8 @@ Models are evaluated on the test set using:
 ---
 
 ## Results
-- Analytic results can be found in: https://drive.google.com/drive/folders/1p0zjjSEbGFUO3WnQ5tjgVsMRTmLMrVUF?usp=drive_link
+- In main.ipynb file there are the results of the final run before commit in this repo.
+- Analytic results from different combinations of hyperparameters can be found in: https://drive.google.com/drive/folders/1p0zjjSEbGFUO3WnQ5tjgVsMRTmLMrVUF?usp=drive_link
 
 ## Language and Libraries Used
 
