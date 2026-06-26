@@ -8,8 +8,8 @@ class MLP(nn.Module):
         self.attn = nn.Sequential(nn.Linear(hidden_dim, attn_hidden_dim), nn.Tanh(), nn.Linear(attn_hidden_dim, 1))
 
     def forward(self, rnn_outputs, mask):
-        # rnn_outputs: (batch_size X T X D=2H)
-        # mask: (batch_size X T) with 1 for real tokens, 0 for PAD
+        #rnn_outputs: (batch_size X T X D=2H)
+        #mask: (batch_size X T) with 1 for real tokens, 0 for PAD
 
         scores = self.attn(rnn_outputs).squeeze(-1)  # (batch_size X T)
         scores = scores.masked_fill(mask == 0, -1e9) #ignore PAD
@@ -71,7 +71,7 @@ class RNN(nn.Module):
         elif self.model_type == 'LSTM':
             c0 = torch.zeros(self.num_layers * 2, batch_size, self.hidden_size,device=device)
             out, _ = self.lstm(emb, (h0, c0))
-            #τελευταίο hidden state απο καθε layer, αχρηστο
+            #last hidden state from every layer is useless
         else:
             out, _ = self.rnn(emb,h0)
 
