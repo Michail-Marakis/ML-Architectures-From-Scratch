@@ -76,7 +76,7 @@ class RNN(nn.Module):
             out, _ = self.rnn(emb,h0)
 
         if self.use_pooling:
-            #max pooling, αλλά θέλουμε να αγνοήσουμε PAD
+            #max pooling, but ignore PAD
             out_masked = out.masked_fill(mask.unsqueeze(-1) == 0, -1e9)
             pooled = torch.max(out_masked, dim=1).values     # (batch_size X D)
             logits = self.fc(pooled)                         # (batch_size X Categories = 2)
