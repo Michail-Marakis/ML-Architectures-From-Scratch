@@ -110,7 +110,7 @@ Models are evaluated on the test set using:
 
 ## Purpose
 This project was developed for educational purposes to:
-- Gain hands-on experience with RNN models
+- Gain hands-on experience with sequence models
 - Understand the impact of attention mechanisms
 - Compare different recurrent architectures in a controlled setting
 - Practice end-to-end NLP model development in PyTorch
