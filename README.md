@@ -1,8 +1,9 @@
 # Applied ML & Deep Learning Sandbox
 
-A unified engineering sandbox designed to benchmark and study machine learning pipelines across different abstraction levels. This repository bridges mathematical foundations with production-ready frameworks by evaluating two distinct paradigms:
+This repository contains implementations and experiments with different Machine Learning and Deep Learning algorithms, using NumPy and PyTorch. The project is divided into two parts:
 
-1. **Foundations From Scratch (NumPy):** Core Machine Learning algorithms (LOGISTIC REGRESSION,SVM,PCA,KNN,MLP,LEAST SQUARES,KMEANS,GAUSSIAN NAIVE BAYES) written from the ground up.
-2. **Deep Learning Frameworks (PyTorch):** Advanced Convolutional (CNN) and Recurrent (RNN) neural network architectures implemented using raw PyTorch custom training loops.
+1. **Machine Learning From Scratch (NumPy):** Implementations of classical algorithms, including Logistic Regression, SVM, PCA, KNN, MLP, Least Squares, K-Means, and Gaussian Naive Bayes.
 
-By combining low-level mathematical implementations with industry-standard deep learning pipelines, this project serves as a comprehensive case study on algorithm behavior, optimization trade-offs, and framework efficiency.
+2. **Deep Learning (PyTorch):** Implementations and experiments with Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), using custom training loops and comparing different architectures and training approaches.
+
+The goal of this project is to better understand how these algorithms work, explore their mathematical foundations, and compare different models and training methods through practical experiments.
